@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-sent-social
+  labels:
+    app: stock-sent-social
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-sent-social
+  template:
+    metadata:
+      labels:
+        app: stock-sent-social
+    spec:
+      containers:
+        - name: stock-sent-social
+          image: stock-sent-social:latest
+          ports:
+            - containerPort: 8080
