@@ -1,6 +1,7 @@
 """Processor module for social media sentiment analysis."""
 
 from typing import Any
+
 from textblob import TextBlob
 
 from app.logger import setup_logger
@@ -17,6 +18,7 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
     Returns:
         dict[str, Any]: Original data with 'sentiment_score' and 'sentiment_label' added.
+
     """
     content = data.get("content")
 
@@ -34,7 +36,9 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
         data["sentiment_score"] = polarity
         data["sentiment_label"] = classify_sentiment(polarity)
 
-        logger.info("Social sentiment analysis complete: %.2f (%s)", polarity, data["sentiment_label"])
+        logger.info(
+            "Social sentiment analysis complete: %.2f (%s)", polarity, data["sentiment_label"]
+        )
         return data
 
     except Exception as e:
@@ -52,6 +56,7 @@ def classify_sentiment(score: float) -> str:
 
     Returns:
         str: 'positive', 'neutral', or 'negative'
+
     """
     if score > 0.1:
         return "positive"
