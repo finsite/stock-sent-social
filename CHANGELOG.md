@@ -7,6 +7,12 @@
 - Initial project structure cloned from template_python
 - Custom configuration and module setup for `stock-sent-social`
 
+## v0.2.0 (2025-05-24)
+
+### Feat
+
+- **versioning**: enforce version consistency across pyproject.toml, __init__.py, and changelog
+
 ## v0.1.0 (2025-05-24)
 
 ### Feat
