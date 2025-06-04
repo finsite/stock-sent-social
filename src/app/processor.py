@@ -12,32 +12,23 @@ logger = setup_logger(__name__)
 
 def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
     """Analyzes sentiment of a social media message (e.g., tweet, post).
-
+    
     Args:
     ----
         data (dict[str, Any]): Dictionary with a 'content' key containing the text to analyze.
 
-    Parameters
-    ----------
-    data :
-        dict[str:
-    Any :
-        param data: dict[str:
-    Any :
-        param data: dict[str:
-    Any :
+    :param data: dict[str:
+    :param Any: param data: dict[str:
+    :param Any: param data: dict[str:
+    :param Any: 
+    :param data: 
+    :type data: dict[str :
+    :param Any]: 
+    :param data: 
+    :type data: dict[str :
+    :param data: dict[str: 
 
-    data : dict[str :
-
-    Any] :
-
-    data: dict[str :
-
-
-    Returns
-    -------
-
-
+    
     """
     content = data.get("content")
 
@@ -69,28 +60,21 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
 
 def classify_sentiment(score: float) -> str:
     """Classifies polarity score into sentiment label.
-
+    
     Args:
     ----
         score (float): Polarity score from -1 to 1.
 
-    Parameters
-    ----------
-    score :
-        float:
-    score :
-        float:
-    score :
-        float:
-    score : float :
+    :param score: float:
+    :param score: float:
+    :param score: float:
+    :param score: 
+    :type score: float :
+    :param score: 
+    :type score: float :
+    :param score: float: 
 
-    score: float :
-
-
-    Returns
-    -------
-
-
+    
     """
     if score > 0.1:
         return "positive"
