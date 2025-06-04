@@ -25,7 +25,6 @@ def main() -> None:
     applies sentiment analysis to social media content, and publishes the results.
 
 
-    
     """
     logger.info("Starting Social Sentiment Analysis Service...")
     consume_messages()
