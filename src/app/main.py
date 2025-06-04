@@ -30,6 +30,7 @@ def main() -> None:
     Returns
     -------
 
+
     """
     logger.info("Starting Social Sentiment Analysis Service...")
     consume_messages()
