@@ -20,7 +20,7 @@ logger = setup_logger(__name__)
 
 def main() -> None:
     """Starts the Social Media Sentiment Analysis Service.
-    
+
     This service listens to messages from a queue (RabbitMQ or SQS),
     applies sentiment analysis to social media content, and publishes the results.
 
