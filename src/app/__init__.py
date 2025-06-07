@@ -1,1 +1,5 @@
-__version__ = "0.1.0"  # Matches pyproject.toml version
+"""stock-sent-social
+
+Auto-generated init file with version."""
+
+__version__ = "0.3.0"
