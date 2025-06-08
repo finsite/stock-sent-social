@@ -47,7 +47,9 @@ def analyze_sentiment(data: dict[str, Any]) -> dict[str, Any]:
         data["sentiment_label"] = classify_sentiment(polarity)
 
         logger.info(
-            "Social sentiment analysis complete: %.2f (%s)", polarity, data["sentiment_label"]
+            "Social sentiment analysis complete: %.2f (%s)",
+            polarity,
+            data["sentiment_label"],
         )
         return data
 
